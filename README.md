@@ -1,4 +1,4 @@
-# Brief Breakdown of Current Data
+# Breakdown of Current Data
 
 This README briefly describes each of the datasets provisionally included in the list of materials available to students for the Understanding Society with Big Data first year course. 
 
@@ -71,4 +71,63 @@ This dataset is from the paper “From Chambers to Echo Chambers: Quantifying Po
 
 - **tweets_with_topics.csv** :
 To complement the retweet networks, which do not include the content of tweets, we have also included a dataset from Effrosynidis et al., 2022 (https://data.mendeley.com/datasets/mw8yd7z9wc/2). This dataset spans over 13 years and contains more than 15 million climate-related tweets. While the actual tweet text is not provided, the dataset includes metadata such as sentiment, topic assignment, stance, and aggressiveness. This allows students to analyse the content and characteristics of climate discussions on Twitter, and when combined with the retweet networks above, provides a comprehensive resource for drawing insights about both network structure and tweet-level dynamics.
+
+
+### Housing
+
+Folder Structure:
+
+```
+housing
+  ├── housing_discussions_reddit
+  │   ├── edinburgh_rent_comments.csv
+  │   ├── edinburgh_rent_edges.csv
+  │   ├── edinburgh_rent_nodes.csv
+  │   └── edinburgh_rent_posts.csv
+  │
+  ├── rental_prices
+  │   ├── 1bed_rental_prices_around_scotland.csv
+  │   ├── 1bed_shared_rental_prices_around_scotland.csv
+  │   ├── 2bed_rental_prices_around_scotland.csv
+  │   ├── 3bed_rental_prices_around_scotland.csv
+  │   ├── 4bed_rental_prices_around_scotland.csv
+  │   └── rental_prices_for_scotland_overall.csv
+  │
+  ├── scottish_parliament_housing_discussions
+  │   └── scottish_parliament_housing_discussions.csv
+  │
+  └── slurp
+      └── data not here yet 
+```
+
+### Polarisation
+
+Folder Structure:
+
+```
+polarisation
+  ├── brexit
+  │   ├── early
+  │   │   ├── mps_mention_nodelist_early.csv
+  │   │   ├── mps_mentions_edgelist_early.csv
+  │   │   ├── mps_retweet_edgelist_early.csv
+  │   │   ├── mps_retweet_nodelist_early.csv
+  │   │   └── twts_corpus_sample_early.csv
+  │   │
+  │   └── late
+  │       ├── mps_mention_nodelist_late.csv
+  │       ├── mps_mentions_edgelist_late.csv
+  │       ├── mps_retweet_edgelist_late.csv
+  │       ├── mps_retweet_nodelist_late.csv
+  │       └── twts_corpus_sample_late.csv
+  │
+  ├── truth_social
+  │   └── posts_with_all_attributes.csv
+  │
+  ├── twitter
+  │   └── leaving space for Sandrine's US election data
+  │
+  └── western_europe_polarisation
+      └── Dataset_of_ideological_polarization.csv 
+```
     
