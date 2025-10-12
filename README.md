@@ -15,6 +15,7 @@ Folder Structure:
 
 The datasets for this topic explor climate change through four angles: using empirical data, google search trends, discussions in the news, discussions on Twitter. There is a range of types of data (numerical, text, network) and should provide the students with interesting and different angles to climate change.
 
+```
 climate_change
   ├── empirical_data
   │   ├── global_temperatures
@@ -46,10 +47,10 @@ climate_change
 
 Data Sources:
 
-global_temperatures.csv, northern_hemisphere_temperatures.csv, southern_hemisphere_temperatures.csv : 
+- **global_temperatures.csv, northern_hemisphere_temperatures.csv, southern_hemisphere_temperatures.csv : 
 This data originates from the NASA GISS Temperature Analysis (GISTEMP v4). The values are an estimate of the global surface temperature change derived from land-surface, air and sea-surface water temperature anomalies. This data provides temperature change values on the global scale as well as for the Northern and Southern Hemispheres. This data is downloaded from: https://www.kaggle.com/datasets/sujaykapadnis/global-surface-temperatures .
 
-natural_emergencies.csv :
+- **natural_emergencies.csv :
 This data records natural disasters and emergencies around the world from 2004-2025. The data came from the Emergency Events Database (EM-DAT) from the Centre for Research on the Epidemiology of Disasters. For further details, see: https://www.emdat.be .
 
 sea_level_change.csv :
@@ -60,6 +61,8 @@ Search trends from Google for the terms "Climate Change" and "Global Warming" wo
 
 climate_related_news_around_world_translated_to_english.csv , climate_related_news_in_english.csv :
 The "..._in_english.csv" dataset is sourced from the GDELT Project and focuses on climate change discussions in television news. It covers BBC News (2017–2020) and CNN, MSNBC, and Fox News (2009–2020). The dataset includes approximately 95,000 instances where climate change is mentioned, along with the text of the surrounding 15-second segment for each mention. More information about the dataset can be found here: https://blog.gdeltproject.org/a-new-dataset-for-exploring-climate-change-narratives-on-television-news-2009-2020/ . 
+
+
 The "..._translated_to_english.csv" dataset is also sourced from the GDELT Project but instead focuses on multilingual news titles mentioning climate change. The data spans 2015-2020 and covers 63 languages. The original dataset contains over 4 million instances so I randomly sampled 5000. To create English text for the students to read, I then translated the titles using deep_translator (https://pypi.org/project/deep-translator/#google-translate-1). I have not conducted formal tests for translation accuracy, beyond basic sanity checks comparing the outputs with Google Translate, which produced very similar results. While these translations may not be perfect, they offer a reasonable starting point for students to explore a multilingual and global dimension of climate change.
 
 retweet_week_num09_May-03-19.csv , retweet_week_num14_Jun-07-19.csv , retweet_week_num18_Jul-02-19.csv , retweet_week_num27_Sep-06-19.csv :
