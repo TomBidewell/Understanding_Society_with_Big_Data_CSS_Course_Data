@@ -153,4 +153,8 @@ This dataset is drawn from my research on Truth Social and contains posts made b
 Leaving space for Sandrine's US election twitter data.
 - **Dataset_of_ideological_polarization.csv** :
 This dataset provides numerical measures of ideological polarisation in Western Europe since 1945. It is based on expert survey assessments of parties’ left–right placements and applies Dalton’s Polarisation Index (2008) to convert these into quantitative values. The dataset covers 20 Western European countries over the period 1945–2023, encompassing 398 parliamentary elections and legislatures. The data originates from Vincenzo et al. (2023) and is discussed further here: https://search.gesis.org/research_data/SDN-10.7802-2592?doi=10.7802/2592 . 
-    
+
+
+### example_reports_drafts
+
+This folder contains draft reports produced using the datasets, designed both to provide an overview of the data and to demonstrate the use of Power BI. As Tableau Desktop can't be downloaded on Linux and Tableau public publicly shares dashboards which might not be ideal, I explored using Power BI instead and found it worked very well. All reports were created on my personal Linux laptop via the browser, using my University of Edinburgh account. Power BI is also a valuable skill for students to develop for future employment. Both Gephi and KNIME run successfully on Linux as well, though their installation required some command-line setup. With a dedicated session on installation and setup at the start of the course, students should be able to follow along without too much difficulty.
