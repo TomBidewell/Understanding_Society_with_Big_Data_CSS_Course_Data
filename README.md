@@ -70,12 +70,14 @@ This dataset is also sourced from the GDELT Project but instead focuses on multi
 This dataset is from the paper “From Chambers to Echo Chambers: Quantifying Polarization with a Second-Neighbor Approach Applied to Twitter’s Climate Discussion” by Kolić et al., 2025 (https://arxiv.org/abs/2206.14501). It contains weekly anonymised retweet networks discussing climate change throughout 2019. For manageability, I have selected retweets from the first week of each summer month (May, June, July, August, and September). Due to anonymisation, no information on the actual tweets is provided. Despite this, the dataset offers a clean resource for exploring network science concepts. One limitation is that the networks are still relatively large, which may be challenging for course exercises. I might do community detection over these networks and then sample from within these communities to reduce the size but keep the network's structure.
 
 - **tweets_with_topics.csv** :
-To complement the retweet networks, which do not include the content of tweets, we have also included a dataset from Effrosynidis et al., 2022 (https://data.mendeley.com/datasets/mw8yd7z9wc/2). This dataset spans over 13 years and contains more than 15 million climate-related tweets. While the actual tweet text is not provided, the dataset includes metadata such as sentiment, topic assignment, stance, and aggressiveness. This allows students to analyse the content and characteristics of climate discussions on Twitter, and when combined with the retweet networks above, provides a comprehensive resource for drawing insights about both network structure and tweet-level dynamics.
+To complement the retweet networks, which do not include the content of tweets, we have also included a dataset from Effrosynidis et al., 2022 (https://data.mendeley.com/datasets/mw8yd7z9wc/2). This dataset spans over 13 years and contains more than 15 million climate-related tweets, although I only randomly sampled 5000 tweets. While the actual tweet text is not provided, the dataset includes metadata such as sentiment, topic assignment, stance, and aggressiveness. This allows students to analyse the content and characteristics of climate discussions on Twitter, and when combined with the retweet networks above, provides a comprehensive resource for drawing insights about both network structure and tweet-level dynamics.
 
 
 ### Housing
 
 Folder Structure:
+
+This topic allows students to explore the housing crisis in Scotland through multiple lenses which include: discussions on Reddit, numerical data of rental prices in Scotland, discussions in the Scottish Parliament, and hopefully, responses from students themselves from Slurp.
 
 ```
 housing
@@ -99,6 +101,15 @@ housing
   └── slurp
       └── data not here yet 
 ```
+Data Sources:
+
+- **edinburgh_rent_comments.csv, edinburgh_rent_edges.csv , edinburgh_rent_nodes.csv , edinburgh_rent_posts.csv** :
+This dataset contains the 1,000 most recent posts from the r/Edinburgh subreddit with the word “rent” in the title, collected in summer 2025. All posts and comments have been cleaned and preprocessed. The dataset includes post-level and comment-level metadata, along with corresponding nodelist and edgelist files representing the discussion network. Each post was manually reviewed to ensure relevance to housing-related topics (excluding unrelated rentals such as bikes or equipment).  
+- **1bed_rental_prices_around_scotland.csv, 1bed_shared_rental_prices_around_scotland.csv, 2bed_rental_prices_around_scotland.csv, 3bed_rental_prices_around_scotland.csv, 4bed_rental_prices_around_scotland.csv, rental_prices_for_scotland_overall.csv** :
+These datasets are sourced from a Scottish Government report on private sector rental prices in Scotland covering the period 2010–2024. With the exception of the overall dataset, each file includes geographic data, dividing Scotland into its Broad Rental Market Areas (BRMAs). The overall dataset provides a time-series of rental prices for different property sizes. More information can be found here: https://www.gov.scot/publications/private-sector-rent-statistics-scotland-2010-to-2024/ . 
+- **scottish_parliament_housing_discussions.csv** :
+This dataset contains transcripts of Scottish parliamentary discussions relating to rental prices. To identify housing-related debates, I conducted a keyword search using the following terms: ```["rent", "private rented sector", "PRS", "housing crisis", "renting emergency", "rental emergency", "rental crisis", "affordable housing", "rent control", "rent cap"]```
+The discussions span the period January 2010 to May 2025 and were scraped directly from the Search What Was Said in Parliament website using Beautiful Soup. Further information about the data source can be found here: https://www.parliament.scot/chamber-and-committees/official-report/search-what-was-said-in-parliament . 
 
 ### Polarisation
 
