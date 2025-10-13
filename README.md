@@ -114,6 +114,7 @@ The discussions span the period January 2010 to May 2025 and were scraped direct
 ### Polarisation
 
 Folder Structure:
+This topic explores political polarisation using network, social media, and numerical data.
 
 ```
 polarisation
@@ -141,4 +142,15 @@ polarisation
   └── western_europe_polarisation
       └── Dataset_of_ideological_polarization.csv 
 ```
+
+Data Sources:
+
+- **mps_mention_nodelist_{early|late}.csv , mps_mentions_edgelist_{early|late}.csv, mps_retweet_edgelist_{early|late}.csv, mps_retweet_nodelist_{early|late}.csv, twts_corpus_sample_{early|late}.csv** :
+This dataset is adapted from Tod’s teaching materials for SICSS, specifically from this GitHub repository: https://github.com/cjbarrie/CTA-ED/tree/main. It contains Twitter networks of MPs, where posts are retweeted either by other politicians or by members of the public. The aim is to explore patterns of polarisation, examining whether users tend to retweet within their own ideological circles. The original dataset includes 100,000 retweets. To make the networks more manageable for students, I randomly selected two one-month periods (one from the beginning and one from the end of the dataset’s timespan) and retained only the network information from these windows (labelled early and late, respectively). The materials include retweet networks, mention networks, and the retweet data. I plan to extend these datasets with tweet-level analyses (e.g. sentiment analysis). Feedback on these particular datasets would be especially welcome.
+- **posts_with_all_attributes.csv** :
+This dataset is drawn from my research on Truth Social and contains posts made by American politicians on the platform. It includes metadata at the politician level, along with post-level attributes such as the presence of fear or hate speech and the emotions expressed in each post (anger, fear, sadness, joy, and surprise). The dataset offers students an opportunity to analyse political discourse within a highly ideologically aligned social media environment. 
+- **Sandrine's US Election Data** :
+Leaving space for Sandrine's US election twitter data.
+- **Dataset_of_ideological_polarization.csv** :
+This dataset provides numerical measures of ideological polarisation in Western Europe since 1945. It is based on expert survey assessments of parties’ left–right placements and applies Dalton’s Polarisation Index (2008) to convert these into quantitative values. The dataset covers 20 Western European countries over the period 1945–2023, encompassing 398 parliamentary elections and legislatures. The data originates from Vincenzo et al. (2023) and is discussed further here: https://search.gesis.org/research_data/SDN-10.7802-2592?doi=10.7802/2592 . 
     
