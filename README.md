@@ -22,7 +22,7 @@ This topic explores climate change from multiple angles: empirical measurements,
 
 #### Folder Structure
 
-'''
+```
 climate_change
   ├── empirical_data
   │   ├── global_temperatures
