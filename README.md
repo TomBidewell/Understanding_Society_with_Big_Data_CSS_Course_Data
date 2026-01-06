@@ -22,6 +22,7 @@ This topic explores climate change from multiple angles: empirical measurements,
 
 #### Folder Structure
 
+'''
 climate_change
   ├── empirical_data
   │   ├── global_temperatures
@@ -50,7 +51,7 @@ climate_change
       ├── retweet_week_num18_Jul-02-19.csv
       ├── retweet_week_num27_Sep-06-19.csv
       └── tweets_with_topics.csv
-
+'''
 
 #### What you can explore?
 - Long-term trends in global and regional temperatures
@@ -81,6 +82,7 @@ To complement the retweet networks, which do not include the content of tweets, 
 
 This topic focuses on the housing crisis in Scotland, combining public discourse, political debate, and official statistics.
 
+'''
 housing
   ├── housing_discussions_reddit
   │   ├── edinburgh_rent_comments.csv
@@ -101,6 +103,7 @@ housing
   │
   └── slurp
       └── data not here yet
+'''
 
 #### What you can explore?
 
@@ -122,6 +125,7 @@ The discussions span the period January 2010 to May 2025 and were scraped direct
 
 This topic examines political polarisation using social media data, networks, and comparative numerical indicators.
 
+'''
 polarisation
   ├── brexit
   │   ├── early
@@ -146,7 +150,7 @@ polarisation
   │
   └── western_europe_polarisation
       └── Dataset_of_ideological_polarization.csv
-
+'''
 
 
 ### What you can explore?
