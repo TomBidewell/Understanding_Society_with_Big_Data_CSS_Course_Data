@@ -1,4 +1,4 @@
-# Understanding Society with Big Data Computational Social Science Course Data
+# Understanding Society with Big Data Computational Social Science (INFR08034) Data Repository
 
 This repository contains the datasets used in the Understanding Society with Big Data course. The data here will be used throughout the course to help you learn how computational and data-driven methods can be applied to real social questions.
 
