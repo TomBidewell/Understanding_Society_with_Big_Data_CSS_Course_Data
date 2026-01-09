@@ -99,10 +99,8 @@ housing
   │   └── rental_prices_for_scotland_overall.csv
   │
   ├── scottish_parliament_housing_discussions
-  │   └── scottish_parliament_housing_discussions.csv
-  │
-  └── slurp
-      └── data not here yet
+      └── scottish_parliament_housing_discussions.csv
+
 ```
 
 #### What you can explore?
@@ -114,12 +112,11 @@ housing
 #### Key Datasets
 
 - **edinburgh_rent_comments.csv, edinburgh_rent_edges.csv , edinburgh_rent_nodes.csv , edinburgh_rent_posts.csv** :
-This dataset contains the 1,000 most recent posts from the r/Edinburgh subreddit with the word “rent” in the title, collected in summer 2025. All posts and comments have been cleaned and preprocessed. The dataset includes post-level and comment-level metadata, along with corresponding nodelist and edgelist files representing the discussion network. Each post was manually reviewed to ensure relevance to housing-related topics (excluding unrelated rentals such as bikes or equipment).
+This dataset contains the 1,000 most recent posts from the r/Edinburgh subreddit with the word “rent” in the title, collected in Summer 2025. All posts and comments have been cleaned and preprocessed. The dataset includes post-level and comment-level metadata, along with corresponding nodelist and edgelist files representing the discussion network. Each post was manually reviewed to ensure relevance to housing-related topics (excluding unrelated rentals such as bikes or equipment).
 - **1bed_rental_prices_around_scotland.csv, 1bed_shared_rental_prices_around_scotland.csv, 2bed_rental_prices_around_scotland.csv, 3bed_rental_prices_around_scotland.csv, 4bed_rental_prices_around_scotland.csv, rental_prices_for_scotland_overall.csv** :
 These datasets are sourced from a Scottish Government report on private sector rental prices in Scotland covering the period 2010–2024. With the exception of the overall dataset, each file includes geographic data, dividing Scotland into its Broad Rental Market Areas (BRMAs). The overall dataset provides a time-series of rental prices for different property sizes. More information can be found here: https://www.gov.scot/publications/private-sector-rent-statistics-scotland-2010-to-2024/ .
 - **scottish_parliament_housing_discussions.csv** :
-This dataset contains transcripts of Scottish parliamentary discussions relating to rental prices. To identify housing-related debates, I conducted a keyword search using the following terms: `["rent", "private rented sector", "PRS", "housing crisis", "renting emergency", "rental emergency", "rental crisis", "affordable housing", "rent control", "rent cap"]`
-The discussions span the period January 2010 to May 2025 and were scraped directly from the Search What Was Said in Parliament website using Beautiful Soup. Further information about the data source can be found here: https://www.parliament.scot/chamber-and-committees/official-report/search-what-was-said-in-parliament .
+This dataset contains transcripts of Scottish parliamentary discussions relating to rental prices. The discussions span the period January 2010 to May 2025 and were scraped directly from the Search What Was Said in Parliament website using Beautiful Soup. Further information about the data source can be found here: https://www.parliament.scot/chamber-and-committees/official-report/search-what-was-said-in-parliament .
 
 ### Political Polarisation
 
